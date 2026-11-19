@@ -7,7 +7,7 @@ class Supplier(Base):
     __tablename__ = "suppliers"
     id = Column(Integer, primary_key=True,nullable=False)
     name = Column(String,nullable=False,unique=True)
-    #Achat_id = Column(Integer,ForeignKey("achats.id"), nullable=False)
+    #purchase_id = Column(Integer,ForeignKey("purchases.id"), nullable=False)
     email = Column(String(150), nullable=False, unique=True)
     telephone = Column(String,nullable=False, unique=True)
     adresse = Column(String,nullable=True)

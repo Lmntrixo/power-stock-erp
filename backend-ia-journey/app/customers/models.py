@@ -13,4 +13,4 @@ class Customer(Base):
     created_at = Column(DateTime(timezone=True),server_default=func.now(), nullable=False)
 
     #relationship
-    order=relationship("Oder",back_populates="customer")
+    #order=relationship("Order",back_populates="customer")

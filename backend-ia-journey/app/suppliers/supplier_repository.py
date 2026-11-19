@@ -11,8 +11,8 @@ class SupplierRepository:
         )
     def add_supplier(self, suplier: Supplier):
         self.db.add(suplier)
-        self.db.commit()
-        self.db.refresh(suplier)
+       # self.db.commit()
+        #self.db.refresh(suplier)
         return suplier
     def get_all_supplier(self):
         return(

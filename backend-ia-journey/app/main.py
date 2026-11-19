@@ -14,6 +14,10 @@ from app.categories.categorie_routes import router as category_router
 from app.customers.customer_routes import router as customer_router
 from app.products.product_routes import router as product_router
 from app.suppliers.suplier_routes import router as supplier_router
+from app.purchase.purchae_routes import router as purchase_router
+from app.shop.shop_routes import router as  shop_router
+from app.entreprise.entreprise_routes import router as entreprise_router
+from app.users.users_routes import router as users_router
 DbSession = Annotated[Session, Depends(get_db)]
 app = FastAPI(title="backend Engineering project")
 
@@ -50,3 +54,7 @@ app.include_router(customer_router)
 app.include_router(category_router)
 app.include_router(product_router)
 app.include_router(supplier_router)
+app.include_router(purchase_router)
+app.include_router(shop_router)
+app.include_router(entreprise_router)
+app.include_router(users_router)

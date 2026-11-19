@@ -15,6 +15,9 @@ from app.suppliers import models
 from app.purchase import models
 from app.orders import models
 from app.stock_movements import models
+from app.entreprise import models
+from app.shop import models
+from app.users import model
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

@@ -9,9 +9,8 @@ class Purchase(Base):
     #user_id = Column(Integer,ForeignKey("users.id"))
     status = Column(String, default="pending")
     purchase_date = Column(DateTime(timezone=True),server_default=func.now(), nullable=False)
-
     #relationship
-    purchase_item =relationship("PurchaseItem",back_populates="purchase")
+    purchase_item = relationship("PurchaseItem",back_populates="purchase")
 
 class PurchaseItem(Base):
     __tablename__ = "purchase_items"
